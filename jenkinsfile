@@ -4,11 +4,7 @@ node {
     }
 
     stage('Run tests'){
-        if(isUnix()){
-            sh "mvn clean test"
-        } else {
-            bat "mvn clean test"
-        }
+        bat "mvn clean test"
     }
 
     stage('Generate report'){
