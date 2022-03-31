@@ -1,12 +1,13 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.*;
+import utilities.Driver;
 
 public class FindPage {
 
     @Given("page loads correctly")
     public void page_loads_correctly() {
-        System.out.println("found page");
+        Driver.GetDriver().get("https://www.google.com");
     }
 
     @Then("return spoiler items")
