@@ -5,6 +5,7 @@ node {
 
     stage('Run tests'){
         bat "mvn clean test"
+        bat "mvn verify"
     }
 
     stage('Generate report'){
