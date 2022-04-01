@@ -20,6 +20,12 @@ pipeline {
             steps {
                 bat "mvn clean test"
             }
+
+            post {
+                always {
+                    junit '**/surefire-reports/*.xml'
+                }
+            }
         }
     }
 }
