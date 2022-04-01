@@ -1,11 +1,11 @@
 node {
-    stage('Clone code') {
-        git 'https://github.com/Cybertek-Internal/demo-project.git'
-    }
+//     stage('Clone code') {
+//         git 'https://github.com/Cybertek-Internal/demo-project.git'
+//     }
 
     stage('Run tests'){
         bat "mvn clean test"
-        bat "mvn verify"
+        //bat "mvn verify"
     }
 
     stage('Generate report'){
