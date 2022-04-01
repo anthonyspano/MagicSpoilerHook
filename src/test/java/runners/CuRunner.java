@@ -16,7 +16,4 @@ import org.junit.runner.RunWith;
         glue = "stepDefinitions"
 )
 
-// main runner
-public class CuRunner {
-
-}
+public class CuRunner {}
